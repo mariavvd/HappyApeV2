@@ -39,7 +39,7 @@ class Highlight
     /**
      * @ORM\Column(type="boolean")
      */
-    private $isPublished;
+    private $isPublished = false;
 
     public function getId(): ?int
     {

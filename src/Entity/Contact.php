@@ -19,7 +19,7 @@ class Contact
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $firtName;
+    private $firstName;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -41,14 +41,14 @@ class Contact
         return $this->id;
     }
 
-    public function getFirtName(): ?string
+    public function getFirstName(): ?string
     {
-        return $this->firtName;
+        return $this->firstName;
     }
 
-    public function setFirtName(string $firtName): self
+    public function setFirstName(string $firtName): self
     {
-        $this->firtName = $firtName;
+        $this->firstName = $firtName;
 
         return $this;
     }
